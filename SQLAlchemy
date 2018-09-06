@@ -1,0 +1,6 @@
+from SQLAlchemy import create_engine
+engine = create_engine('sqlite:///chinook.sqlite')
+table_names = engine.table_names()
+
+# Print the table names to the shell
+print(table_names)
